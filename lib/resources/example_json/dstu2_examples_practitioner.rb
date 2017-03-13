@@ -1,12 +1,12 @@
 module Cerner
   module Resources
 
-    DSTU2_RESOURCE_EXAMPLE_ENTRY ||= {
+    DSTU2_PRACTITIONER_ENTRY ||= {
       # Add your resource here.
     }
 
 
-    DSTU2_RESOURCE_EXAMPLE_BUNDLE ||= {
+    DSTU2_PRACTITIONER_BUNDLE ||= {
       # Add a bundle of your resource here.
     }
 
