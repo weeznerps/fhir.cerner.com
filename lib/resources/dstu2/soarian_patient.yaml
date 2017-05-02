@@ -21,12 +21,3 @@ fields:
         system: http://hl7.org/fhir/identifier-type
       - display: v2 Identifier Type
         system: http://hl7.org/fhir/v2/0203
-
-- name: contact
-  required: 'No'
-  cardinality: 0..*
-  type: BackboneElement
-  description: A contact party (e.g. guardian, partner, friend) for the patient.
-  children:
-
-
