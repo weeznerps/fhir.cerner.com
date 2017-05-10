@@ -13,13 +13,13 @@ For the Patient resource query, the API returns a set of data stored for the pat
 
 The following fields are returned if valued:
 
-* [Identifier]{:target="_blank"}
-* [Patient name]{:target="_blank"}
-* [Gender]{:target="_blank"}
-* [Date of Birth]{:target="_blank"}
-* [Address]{:target="_blank"}
-* [Language]{:target="_blank"}
-* One or more patient races and ethnicities will be returned as extensions, see [Extensions]
+* [Identifier](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.identifier){:target="_blank"}
+* [Patient name](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.name){:target="_blank"}
+* [Gender](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.gender){:target="_blank"}
+* [Date of Birth](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.birthDate){:target="_blank"}
+* [Address](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.address){:target="_blank"}
+* [Language](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.language){:target="_blank"}
+* One or more patient races and ethnicities will be returned as extensions, see [Extensions](./#extensions)
 
 ## Terminology Bindings
 
@@ -27,12 +27,12 @@ The following fields are returned if valued:
 
 ## Extensions
 
-The [bundle extension] can be returned, see possible codes in the [errors section] below.
+The [bundle extension] can be returned, see possible codes in the [errors section](#errors-and-informational-messages) below.
 
 The following extensions can also be returned:
 
-* [US Core Race]
-* [US Core Ethnicity]
+* [US Core Race](http://hl7.org/fhir/DSTU2/extension-us-core-race.html){:target="_blank"}
+* [US Core Ethnicity](http://hl7.org/fhir/DSTU2/extension-us-core-ethnicity.html){:target="_blank"}
 
 ## Search      
 
@@ -66,7 +66,7 @@ _Implementation Notes_
 
 ### Errors and Informational messages
 
-The common [errors and informational messages] can be returned.
+The common [errors and informational messages](../../common-errors) can be returned.
 
 These additional informational messages may be returned within the [bundle extension]:
 
@@ -75,16 +75,6 @@ These additional informational messages may be returned within the [bundle exten
  papi003 | This is the most current, known Patient data and may not reflect the state of information known at a previous date.
  papi004 | No patient information is available.
 
-[US Core Race]: http://hl7.org/fhir/DSTU2/extension-us-core-race.html
-[US Core Ethnicity]: http://hl7.org/fhir/DSTU2/extension-us-core-ethnicity.html
+
 [bundle extension]: ../../#bundle-message-extension
-[errors section]: #errors-and-informational-messages
 [`reference`]: http://hl7.org/fhir/dstu2/search.html#reference
-[Identifier]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.identifier
-[Patient name]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.name
-[Gender]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.gender
-[Date of birth]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.birthDate
-[Address]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.address
-[Language]: https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.language
-[Extensions]: ./#extensions
-[errors and informational messages]: ../../common-errors
