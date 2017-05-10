@@ -13,12 +13,12 @@ For the Patient resource query, the API returns a set of data stored for the pat
 
 The following fields are returned if valued:
 
-* [Identifier]
-* [Patient name]
-* [Gender]
-* [Date of Birth]
-* [Address]
-* [Language]
+* [Identifier]{:target="_blank"}
+* [Patient name]{:target="_blank"}
+* [Gender]{:target="_blank"}
+* [Date of Birth]{:target="_blank"}
+* [Address]{:target="_blank"}
+* [Language]{:target="_blank"}
 * One or more patient races and ethnicities will be returned as extensions, see [Extensions]
 
 ## Terminology Bindings
