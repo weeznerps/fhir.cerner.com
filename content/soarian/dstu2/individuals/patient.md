@@ -75,8 +75,8 @@ These additional informational messages may be returned within the [bundle exten
  papi003 | This is the most current, known Patient data and may not reflect the state of information known at a previous date.
  papi004 | No patient information is available.
 
-[US Core Race]: https://hl7.org/fhir/dstu2/extension-us-core-race.html
-[US Core Ethnicity]: https://hl7.org/fhir/dstu2/extension-us-core-ethnicity.html
+[US Core Race]: http://hl7.org/fhir/DSTU2/extension-us-core-race.html
+[US Core Ethnicity]: http://hl7.org/fhir/DSTU2/extension-us-core-ethnicity.html
 [bundle extension]: ../../#bundle-message-extension
 [errors section]: #errors-and-informational-messages
 [`reference`]: http://hl7.org/fhir/dstu2/search.html#reference

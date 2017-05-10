@@ -45,21 +45,30 @@ module Cerner
               "div": "&lt;div ccdRefId=\"3001\">&lt;b>Introduction of Cardiac Pacemaker System via Vein [ Procedure Date: 10/5/2011 12:00 AM ] &lt;/b>&lt;br/>    Device Description: CRT-D DTBA1QQ VIVA QUAD XT US IS4/DF4&lt;br/>    Surgical type: IMPLANT&lt;br/>    Device ID: (01)00643169007222(17)160128(21)BLC200461H&lt;br/>    MRI Safe: Labeling does not contain MRI Safety Information&lt;br/>    Natural Rubber/Latex indicator: No&lt;br/>    Company Name: MEDTRONIC, INC.&lt;br/>    Brand Name: Viva? Quad XT CRT-D&lt;br/>    Model #: DTBA1QQ&lt;br/>    Serial #: BLC200461H&lt;br/>&lt;/div>"
             },
             "identifier": [
-              {
-                "use": "official",
-                "value": "3001"
-              }
-            ],
+          {
             "type": {
               "coding": [
                 {
-                  "system": "FDA",
-                  "code": "2.16.840.1.113883.6.303",
-                  "display": "CRT-D DTBA1QQ VIVA QUAD XT US IS4/DF4"
+                  "system": "http://hl7.org/fhir/identifier-type",
+                  "code": "SNO",
+                  "display": "Serial Number"
                 }
               ],
-              "text": "CRT-D DTBA1QQ VIVA QUAD XT US IS4/DF4"
-            }
+              "text": "Serial Number"
+            },
+            "value": "BLC200461H"
+          }
+        ],
+		"type": {
+                    "coding": [
+                        {
+                            "system": "FDA", 
+                            "code": "KRG",
+                            "display": "Programmer, pacemaker" 
+                        }
+                    ],
+                    "text": "Programmer, pacemaker"
+                }
           }
         }
       ]

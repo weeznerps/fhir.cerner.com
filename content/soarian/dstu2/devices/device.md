@@ -29,6 +29,7 @@ The FHIR definition of device is broader than the ONC definition of implantable 
 
 The [bundle extension] can be returned, see possible codes in the [errors section] below.
 
+
 ## Search 
 
 	GET /Device?:parameters

@@ -17,7 +17,9 @@ To avoid patient confusion about the definitive active medication list, no in-pr
 
 ## Terminology Bindings
 
-<%= terminology_table(:soarian_medication_statement, :dstu2) %>
+### Contained Medication Bindings
+
+<%= terminology_table(:soarian_contained_medication, :dstu2) %>
 
 ## Custom Extensions
 
@@ -25,24 +27,22 @@ The [bundle extension] can be returned, see possible codes in the [errors sectio
 
   Status Extension:
 
-The URL for this status extension is defined as `Additional status`
+The URL for this status extension is defined as `http://cerner.hs.fhir.com/StructureDefinition/additional-status`
 
  ID                         | Value\[x] Type | Description
 ----------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------
-`MedicationStatement/Staus` | [`string`]     | This element describes the additional status information of the MedicationStatement. Possible values are 'New', 'Continued' and 'Modified'.
+`MedicationStatement/Staus` | [`string`]     | This element describes the additional status information of the MedicationStatement. Additional statuses has beed added to properly portray the status of the medications on the DMR as the existing statuses do not reflect the correct status of the medication.Possible values are `new`, `continued` and `modified`.
 
-Example:
- 
-<%= json(:SOARIAN_MEDICATIONSTATEMENT_STATUS_EXTENSION) %>
 
 ## Search 
 
-GET /MedicationStatement?:parameters
+	GET /MedicationStatement?:parameters
 
 _Implementation Notes_
 
 * The API returns qualifying results dated within the implicit or explicitly defined date query parameter.  For response time, response may be limited to 1000 records.  For any non-null response, the API will provide the informational message including the record dates included in the response.  This informational message may be augmented with further detail if noted below.    
 * The Narrative includes additional information pertaining to the MedicationStatement, and should be shown to the user to ensure completeness of clinical content and context.
+* [MedicationStatement.medication] may be a reference to a [contained] Medication.  Medications in the system always exist within the context of a MedicationStatement and cannot be be referenced independently.
 
 ### Parameters
 
@@ -81,3 +81,5 @@ These additional informational messages may be returned within the [bundle exten
 [`string`]: http://hl7.org/fhir/dstu2/datatypes.html#string
 [`reference`]: http://hl7.org/fhir/DSTU2/search.html#reference
 [errors and informational messages]: ../../common-errors
+[MedicationStatement.medication]: http://hl7.org/fhir/DSTU2/medicationstatement-definitions.html#MedicationStatement.medication_x_
+[contained]: http://hl7.org/fhir/DSTU2/references.html#contained

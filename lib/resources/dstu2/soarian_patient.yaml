@@ -18,6 +18,6 @@ fields:
       description: The type used to determine which identifier to use for a specific purpose.
       terminology:
       - display: Identifier Type Codes
-        system: http://hl7.org/fhir/identifier-type
+        system: http://hl7.org/fhir/DSTU2/identifier-type
       - display: v2 Identifier Type
-        system: http://hl7.org/fhir/v2/0203
+        system: http://hl7.org/fhir/DSTU2/v2/0203
