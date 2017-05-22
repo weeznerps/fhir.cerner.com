@@ -72,7 +72,7 @@ module Cerner
             "_status": {
               "extension": [
                 {
-                  "url": "Additional Status",
+                  "url": "http://cerner.hs.fhir.com/StructureDefinition/additional-status",
                   "valueString": "modified"
                 }
               ]
@@ -118,7 +118,7 @@ module Cerner
             "_status": {
               "extension": [
                 {
-                  "url": "Additional Status",
+                  "url": "http://cerner.hs.fhir.com/StructureDefinition/additional-status",
                   "valueString": "modified"
                 }
               ]

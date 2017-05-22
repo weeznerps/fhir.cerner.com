@@ -15,7 +15,7 @@ The following fields are returned if valued:
 
 * [Identifier](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.identifier){:target="_blank"}
 * [Patient name](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.name){:target="_blank"}
-* [Gender](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.gender){:target="_blank"}
+* [Gender](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.gender){:target="_blank"} see [Implementation notes]
 * [Date of Birth](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.birthDate){:target="_blank"}
 * [Address](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.address){:target="_blank"}
 * [Language](https://www.hl7.org/fhir/DSTU2/patient-definitions.html#Patient.language){:target="_blank"}
@@ -38,10 +38,10 @@ The following extensions can also be returned:
 
 	GET /Patient?:parameters
 	
-_Implementation Notes_
+### Implementation Notes
 
 * The API returns the most current patient list.
-* The value for gender in the patient resource may or may not represent the value of sex explicitly recorded at birth.  ONC has clarified that birth sex is the CCDS (common clinical data set) value.  This information, if charted and configured is returned as part of the Observation resource.
+* This is the Administrative Gender.  Birth Sex,  if charted and configured, is returned as part of the Observation resource.   
 
 ### Parameters
 
@@ -78,3 +78,4 @@ These additional informational messages may be returned within the [bundle exten
 
 [bundle extension]: ../../#bundle-message-extension
 [`reference`]: http://hl7.org/fhir/dstu2/search.html#reference
+[Implementation notes]: ../patient/#implementation-notes

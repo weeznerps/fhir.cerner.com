@@ -31,7 +31,7 @@ The URL for this status extension is defined as `http://cerner.hs.fhir.com/Struc
 
  ID                         | Value\[x] Type | Description
 ----------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------
-`MedicationStatement/Staus` | [`string`]     | This element describes the additional status information of the MedicationStatement. Additional statuses has beed added to properly portray the status of the medications on the DMR as the existing statuses do not reflect the correct status of the medication.Possible values are `new`, `continued` and `modified`.
+`additional-status` | [`string`]     | This element further qualifies medications that have a status of “active”. Possible values are `new`, `continued` and `modified`.
 
 
 ## Search 
@@ -42,7 +42,7 @@ _Implementation Notes_
 
 * The API returns qualifying results dated within the implicit or explicitly defined date query parameter.  For response time, response may be limited to 1000 records.  For any non-null response, the API will provide the informational message including the record dates included in the response.  This informational message may be augmented with further detail if noted below.    
 * The Narrative includes additional information pertaining to the MedicationStatement, and should be shown to the user to ensure completeness of clinical content and context.
-* [MedicationStatement.medication] may be a reference to a [contained] Medication.  Medications in the system always exist within the context of a MedicationStatement and cannot be be referenced independently.
+* [MedicationStatement.medication] is always a reference to a [contained] Medication.  Medications in the system always exist within the context of a MedicationStatement and cannot be be referenced independently.
 
 ### Parameters
 

@@ -15,6 +15,8 @@ Soarian's list supports medication, food, environmental, and other allergen cate
 
 ## Terminology Bindings
 
+Medication allergens are coded in RxNorm. Negations are indicated by SNOMED codes. All other allergens (e.g., environmental substances) are returned as text only.
+
 <%= terminology_table(:soarian_allergy_intolerance, :dstu2) %> 
 
 ## Custom Extensions
