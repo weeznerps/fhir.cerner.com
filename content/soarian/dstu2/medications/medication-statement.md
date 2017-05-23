@@ -31,7 +31,7 @@ The URL for this status extension is defined as `http://cerner.hs.fhir.com/Struc
 
  ID                         | Value\[x] Type | Description
 ----------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------
-`additional-status` | [`string`]     | This element further qualifies medications that have a status of “active”. Possible values are `new`, `continued` and `modified`.
+`additional-status`         | [`string`]     | This element further qualifies medications that have a status of “active” by adding the more specific state of the MedicationOrder determined during medication reconciliation. Possible values are `new`, `continued` and `modified`.
 
 
 ## Search 

@@ -21,7 +21,8 @@ fields:
       note: Currently will return SNO code from the below system.
       terminology:
       - display: Identifier Type Codes
-        system: http://hl7.org/fhir/DSTU2/identifier-type
+        system: http://hl7.org/fhir/identifier-type
+        info_link: http://hl7.org/fhir/DSTU2/valueset-identifier-type.html
 
 - name: type
   required: 'Yes'
@@ -32,4 +33,4 @@ fields:
     description: The type of device.
     terminology:
       - display: FDA Product Code Classification
-        system: https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/Overview/ClassifyYourDevice/ucm051668.htm
+        info_link: https://www.fda.gov/MedicalDevices/DeviceRegulationandGuidance/Overview/ClassifyYourDevice/ucm051668.htm

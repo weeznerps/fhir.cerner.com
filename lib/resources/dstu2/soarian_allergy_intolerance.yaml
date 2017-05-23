@@ -12,9 +12,11 @@ fields:
     terminology:
     - display: RxNorm
       system: http://www.nlm.nih.gov/research/umls/rxnorm
+      info_link: http://hl7.org/fhir/DSTU2/rxnorm.html
       note: RxNorm is supported for Allergens of medication category.
     - display: SNOMED CT
-      system: http://snomed.info/
+      system: http://snomed.info/sct
+      info_link: http://hl7.org/fhir/dstu2/snomedct.html
       note: SNOMED CT is supported for negations.
 
 - name: reaction
